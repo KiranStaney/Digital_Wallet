@@ -1,0 +1,132 @@
+body {
+  background-color: rgb(248, 243, 217);
+}
+
+.offers-rewards-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: rgb(235, 229, 194);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(80, 75, 56);
+  width: 100%;
+}
+
+.offers-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+}
+
+.rewards-section {
+  flex: 1;
+  background: rgb(248, 243, 217);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+h3 {
+  color: rgb(80, 75, 56);
+}
+
+.offers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 10px;
+  justify-items: center;
+}
+
+.offer-card {
+  background: rgb(248, 243, 217);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  min-width: 250px;
+  height: 200px; 
+  cursor: pointer;
+  transition: height 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; 
+}
+
+.offer-card.expanded {
+  height: auto; 
+}
+
+.offer-image {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.offer-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer-details h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: rgb(80, 75, 56);
+}
+
+.offer-details p {
+  font-size: 14px;
+  color: rgb(185, 178, 138);
+}
+
+.offer-expiry {
+  font-size: 12px;
+  color: red;
+}
+
+.rewards-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reward-item {
+  background: rgb(235, 229, 194);
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.reward-status {
+  font-weight: bold;
+  color: rgb(80, 75, 56);
+}
+
+.redeem-button {
+  background-color: rgb(80, 75, 56);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  align-self: center; 
+}
+
+.redeem-button:hover {
+  background-color: rgb(60, 55, 40);
+}

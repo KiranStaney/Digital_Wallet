@@ -1,0 +1,61 @@
+.receive-money-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f7fa;
+}
+
+.wallet-box {
+  background-color: rgb(244, 237, 211);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-info {
+  font-size: 18px;
+  color: rgb(76, 88, 91);
+}
+
+.wallet-id {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(159, 82, 85);
+}
+
+.wallet-info p {
+  margin: 10px 0;
+}
+
+.qr-code-container {
+  margin: 20px 0;
+}
+
+.qr-code-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.copy-button {
+  background-color: rgb(159, 82, 85);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-button:hover {
+  background-color: rgb(124, 68, 79);
+}
+
+.copy-button:focus {
+  outline: none;
+}

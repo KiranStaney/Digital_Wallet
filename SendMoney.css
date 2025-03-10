@@ -1,0 +1,253 @@
+.send-money-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(244, 237, 211);
+}
+
+.overall-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.options-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  width: 400px; 
+  text-align: center;
+}
+
+.option-button {
+  width: 100%; 
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: rgb(126, 153, 163);
+  color: white;
+  font-size: 18px; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-button:hover {
+  background: rgb(76, 88, 91); 
+}
+
+.contacts-container,
+.phone-container,
+.wallet-container,
+.amount-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  width: 400px; 
+  text-align: center;
+}
+
+.input-field,
+.search-bar,
+.phone-number-input,
+.amount-input,
+.pin-input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid rgb(126, 153, 163);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-item {
+  list-style: none;
+  padding: 12px;
+  margin: 6px 0;
+  background: rgb(165, 191, 204);
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-item:hover {
+  background: rgb(126, 153, 163);
+  color: white;
+}
+
+.contact-item:active {
+  transform: scale(0.98);
+}
+
+.pin-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
+  width: 400px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+.pin-container h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.pin-display {
+  width: 200px;
+  height: 60px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f4f8;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-container .button-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.pin-container .back-button,
+.pin-container .ok-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.pin-container .back-button {
+  background: rgb(126, 153, 163);
+  color: white;
+}
+
+.pin-container .back-button:hover {
+  background: rgb(76, 88, 91);
+}
+
+.pin-container .ok-button {
+  background: #4caf50;
+  color: white;
+}
+
+.pin-container .ok-button:hover {
+  background: #45a049;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.transaction-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.transaction-message.success {
+  display: flex;
+}
+
+.transaction-success-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: slideIn 0.5s ease-out;
+}
+
+.transaction-success-box p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.transaction-success-box button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.transaction-success-box button:hover {
+  background-color: #45a049;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}

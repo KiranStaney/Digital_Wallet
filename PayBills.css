@@ -1,0 +1,157 @@
+.pay-bills {
+  padding: 20px;
+  background-color: rgb(248, 243, 217);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bill-category-options,
+.bill-payment-form {
+  background-color: rgb(235, 229, 194);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.bill-category-options h2,
+.bill-payment-form h2 {
+  margin-bottom: 20px;
+  color: rgb(80, 75, 56);
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: rgb(248, 243, 217);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  font-size: 14px;
+  color: rgb(185, 178, 138);
+}
+
+.bill-payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 178, 138);
+  font-size: 16px;
+}
+
+.bill-payment-form input[type="text"].search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(185, 178, 138);
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: rgb(80, 75, 56);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px; 
+}
+
+.button-group button:hover {
+  background-color: rgb(185, 178, 138);
+}
+
+.pin-entry {
+  margin-top: 20px;
+}
+
+.pin-input {
+  width: 50%; 
+  padding: 10px;
+  margin: 0 auto; 
+  border-radius: 5px;
+  border: 1px solid rgb(185, 178, 138);
+  font-size: 16px;
+  text-align: center;
+}
+
+.submit-button {
+  width: 50%; 
+  padding: 10px;
+  margin: 10px auto; 
+  background-color: rgb(80, 75, 56);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: rgb(185, 178, 138);
+}
+
+.error-message {
+  color: #ff0000;
+  margin-bottom: 10px;
+}
+
+.success-message {
+  color: #008000;
+  margin-bottom: 10px;
+}
+
+.package-list {
+  margin-top: 20px;
+}
+
+.package-item {
+  padding: 10px;
+  border: 1px solid rgb(185, 178, 138);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.package-item.selected {
+  background-color: rgb(80, 75, 56);
+  color: #fff;
+}
+
+.package-item:hover {
+  background-color: rgb(235, 229, 194);
+}

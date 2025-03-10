@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-page,
+.signup-page {
+  background-image: url('https://images.pexels.com/photos/259200/pexels-photo-259200.jpeg?auto=compress&cs=tinysrgb&w=600');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.login-container,
+.signup-container {
+  background-color: rgba(255, 255, 255, 0.8); 
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  max-width: 90%; 
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  color: #232d3f;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px; 
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #008170;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #005b41;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f1f1f1;
+  color: #232d3f;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+input[type='email']:focus {
+  border-color: #008170;
+  background-color: #ffffff;
+}
+
+.forgot-password {
+  margin-top: 2px; 
+  text-align: left; 
+}
+
+.forgot-password a {
+  color: #008170;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+  color: #005b41;
+}
+
+.login-btn,
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background-color: #008170;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.login-btn:hover,
+.signup-btn:hover {
+  background-color: #005b41;
+}
+
+.signup-link,
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  color: black;
+}
+
+.signup-link a,
+.login-link a {
+  color: #008170;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9; 
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #008170;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #005b41;
+}
+
+
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f9f9f9; 
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px; 
+  margin-bottom: 20px; 
+}
+
+.auth-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #008170;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.auth-btn:hover {
+  background-color: #005b41;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.about-image {
+  flex: 1;
+  margin-right: 40px; 
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px; 
+  border-radius: 8px;
+}
+
+.about-content {
+  flex: 2;
+}
+
+.about-content h1 {
+  font-size: 32px;
+  color: #232d3f;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
